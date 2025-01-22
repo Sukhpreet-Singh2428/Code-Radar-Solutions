@@ -11,7 +11,7 @@ int main() {
     if(n<=1) {
         isprime = 0;
     }
-    if(isprime){
+    if(isprime==1){
         printf("Prime");
     } else{
         printf("Not Prime");
