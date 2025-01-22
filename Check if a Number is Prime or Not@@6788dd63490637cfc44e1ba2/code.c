@@ -11,6 +11,7 @@ int main() {
         for(int i=2;i<n;i++){
             if(n%i==0){
                 check = 0;
+                break;
             } else{
                 check=1;
             }
