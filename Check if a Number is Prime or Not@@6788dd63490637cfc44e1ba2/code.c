@@ -12,6 +12,9 @@ int main() {
             if(n%i==0){
                 check = 1;
                 break;
+            } else{
+                check=0;
+                break;
             }
         }
         if(check==1) {
