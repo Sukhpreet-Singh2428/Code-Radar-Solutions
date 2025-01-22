@@ -14,7 +14,6 @@ int main() {
                 break;
             } else{
                 check=0;
-                break;
             }
         }
         if(check==1) {
