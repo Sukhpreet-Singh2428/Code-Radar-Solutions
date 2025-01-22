@@ -10,9 +10,9 @@ int main() {
     } else {
         for(int i=2;i<n;i++){
             if(n%i==0){
-                check = 1;
+                check = 0;
             } else{
-                check=0;
+                check=1;
             }
         }
         if(check==1) {
