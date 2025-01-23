@@ -10,9 +10,11 @@ int main() {
     } else if(z=='*') {
         printf("%.0f", x*y);
     } else if(z=='/'){
-        printf("%.0f", x/y);
-    } else if(z=='/' && y==0){
-        printf("error");
+        if(y==0){
+            printf("Error");
+        } else{
+            printf("%.0f", x/y);
+        }
     }
     return 0;
 }
