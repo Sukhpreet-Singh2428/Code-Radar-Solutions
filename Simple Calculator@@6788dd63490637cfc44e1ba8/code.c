@@ -12,7 +12,7 @@ int main() {
     } else if(z=='/'){
         printf("%.0f", x/y);
     } else if(z=='/' && y==0){
-        printf("Error");
+        printf("error");
     }
     return 0;
 }
