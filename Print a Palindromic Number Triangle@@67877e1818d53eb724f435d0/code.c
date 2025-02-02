@@ -7,14 +7,11 @@ int main() {
         for(int j=1;j<=n-i;j++){
             printf(" ");
         }
-        for(int j=1;j<=(2*i-1);j++){
-            if(num==1){
-                printf("%d",num);
-                num++;
-            } else if(num==2){
-                printf("%d",num);
-                num--;
-            }
+        for(int j=1;j<=i;j++){  //loop to print the increasing numbers
+            printf("%d",j);
+        }
+        for(int j=i-1;j>=1;j--){  //loop to print the decreasing numbers
+            printf("%d",j);
         }
         printf("\n");
     }
