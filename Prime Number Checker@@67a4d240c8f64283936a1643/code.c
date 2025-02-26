@@ -1,3 +1,4 @@
+#include<stdio.h>
 int isPrime(int num);
 int isPrime(int num){
     int prime = 1;
