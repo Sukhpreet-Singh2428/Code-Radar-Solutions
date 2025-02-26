@@ -12,7 +12,6 @@ int isPrime(int num);
 //     return 0;
 // }
 int isPrime(int num){
-    int prime = 1;
     if(num <= 1){
         return 0;
     }else if(num==2){
@@ -21,13 +20,9 @@ int isPrime(int num){
     else{
         for(int i=2;i<num;i++){
         if(num%i==0){
-            prime = 0;
-        }
-        if(prime){
-            return 1;
-        }else{
             return 0;
         }
+        return 1;
         }
     }
 }
