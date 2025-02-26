@@ -5,10 +5,10 @@ int isPrime(int num){
         if(num%i==0){
             prime = 0;
         }
-        if(prime==1){
-            printf(1);
-        }else{
-            printf(0);
-        }
+    if(prime==1){
+        printf(1);
+    }else{
+        printf(0);
+    }
     }
 }
