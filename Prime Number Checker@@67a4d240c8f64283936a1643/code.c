@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<math.h>
 int isPrime(int num);
 
 // int main(){
@@ -18,7 +19,7 @@ int isPrime(int num){
         return 1;
     }
     else{
-        for(int i=2;i<num;i++){
+        for(int i=2;i<sqrt(num);i++){
         if(num%i==0){
             return 0;
         }
