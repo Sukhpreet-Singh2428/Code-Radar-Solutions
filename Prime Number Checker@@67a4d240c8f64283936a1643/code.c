@@ -17,7 +17,7 @@ int isPrime(int num){
         if(num%i==0){
             prime = 0;
         }
-    if(prime==1){
+    if(prime){
         return 1;
     }else{
         return 0;
