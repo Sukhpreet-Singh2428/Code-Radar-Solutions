@@ -8,6 +8,13 @@ int main(){
     }
     for(int i=0;i<n;i++){
         int count=0;
+        int alreadycounted=0;
+        for(int k=0;k<i;k++){
+            if(arr[i]==arr[k]){
+                alreadycounted=1;
+                break;
+            }
+        }
         for(int j=0;j<n;j++){
             if(arr[i]==arr[j]){
                 count++;
