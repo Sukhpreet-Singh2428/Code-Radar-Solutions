@@ -15,6 +15,6 @@ int main(){
             num = num/10;
         }
         printf("%d ", sum);
-        return 0;
     }
+    return 0;
 }
