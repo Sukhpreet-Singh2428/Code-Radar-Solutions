@@ -14,7 +14,11 @@ int main(){
             sum = sum+m;
             num = num/10;
         }
-        printf("%d ", sum);
+        if(num<0){
+            printf("%d ", -1*sum);
+        }else{
+            printf("%d ", sum);
+        }
     }
     return 0;
 }
