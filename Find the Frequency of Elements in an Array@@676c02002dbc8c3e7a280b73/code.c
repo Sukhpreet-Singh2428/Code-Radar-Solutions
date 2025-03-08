@@ -15,6 +15,7 @@ int main(){
                 break;
             }
         }
+        if(alreadycounted) continue;
         for(int j=0;j<n;j++){
             if(arr[i]==arr[j]){
                 count++;
