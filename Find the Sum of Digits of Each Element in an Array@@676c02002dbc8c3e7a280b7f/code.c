@@ -10,7 +10,7 @@ int main(){
         int num = arr[i];
         int sum = 0;
         while(num){
-            int m = n%10;
+            int m = num%10;
             sum = sum+m;
             num = num/10;
         }
