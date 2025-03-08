@@ -15,7 +15,8 @@ int main(){
             num = num/10;
         }
         if(num<0){
-            printf("%d ", -1*sum);
+            sum = sum*-1;
+            printf("%d ", sum)
         }else{
             printf("%d ", sum);
         }
