@@ -15,7 +15,7 @@ int main(){
             num = num/10;
         }
         if(sum<0){
-            sum = sum*-1;
+            sum = sum*-1;   // only for the test-case, it's sum is show of -ve number i.e, -12 --> 3
             printf("%d ", sum);
         }else{
             printf("%d ", sum);
