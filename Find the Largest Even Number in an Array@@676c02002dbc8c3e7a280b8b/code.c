@@ -7,12 +7,12 @@ int main(){
         scanf("%d", &arr[i]);
     }
     int max = arr[0];
-    int check = 0;
+    int check = 0;   // To handle the case of no even numbers exist in array !!!
     for(int i=0;i<n;i++){
         if((max<arr[i]) && arr[i]%2==0){
             max = arr[i];
         }
-        else if(arr[i]%2!=0){
+        else if(arr[i]%2!=0){     // To handle the case of no even numbers exist in array !!!
             check++;
         }
     }
