@@ -11,7 +11,7 @@ int main(){
         if((max<arr[i]) && arr[i]%2==0){
             max = arr[i];
         }
-        else if(arr[i]%2!=0){
+        else if((max<arr[i]) && arr[i]%2!=0){
             max = -1;
         }
     }
