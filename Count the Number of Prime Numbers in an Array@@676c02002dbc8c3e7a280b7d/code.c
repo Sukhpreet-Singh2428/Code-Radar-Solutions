@@ -6,15 +6,16 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d", &arr[i]);
     }
-    int count = 0;
+    int count = 0; //counting non-prime
     for(int i=0;i<n;i++){
         for(int j=2;j<=arr[i]-1;j++){
             if(arr[i]%j==0){   // This means not prime !!
                 count++;  
                 break;
-            } else if(arr[i]==1 || arr[i]==0){
-                count++;
             }
+        }
+        if(arr[i]==1 || arr[i]==0){
+            count++;
         }
     }
     printf("%d", n-count);
