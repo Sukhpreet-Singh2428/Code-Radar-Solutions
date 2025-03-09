@@ -15,9 +15,9 @@ int main(){
             }
         }
         if(arr[i]==1 || arr[i]==0){
-            count++;
+            count++;   // counting non-prime
         }
     }
-    printf("%d", n-count);
+    printf("%d", n-count); // size - nonprime = prime
     return 0;
 }
