@@ -8,7 +8,7 @@ int main(){
     }
     int count = 0;
     for(int i=0;i<n;i++){
-        for(int j=2;j<arr[i];j++){
+        for(int j=2;j<=arr[i]-1;j++){
             if(arr[i]%j!=0){
                 count++;
                 break;
