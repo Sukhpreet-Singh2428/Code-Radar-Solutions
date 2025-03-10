@@ -9,7 +9,7 @@ int main(){
     for(int i=0;i<n;i++){
         int count = 0;
         int alreadycounted = 0;
-        int idx = 0
+        int idx = 0;
         for(int k=0;k<i;k++){
             if(arr[i]==arr[k]){
                 alreadycounted=1;
