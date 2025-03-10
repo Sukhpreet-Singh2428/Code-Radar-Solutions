@@ -7,10 +7,10 @@ int main(){
         scanf("%d", &arr[i]);
     }
     for(int i=0;i<n;i++){
-        int check = 0;
+        int check = 1;
         for(int j=0;j<n;j++){
             if(arr[i]<arr[j]){
-                check = 1;
+                check = 0;
             }
         }
         if(check){
