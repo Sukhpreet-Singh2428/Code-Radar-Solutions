@@ -6,10 +6,11 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d", &arr[i]);
     }
-    int check = 0;
+    int check = 1;
     for(int i=0;i<n-1;i++){
-        if(arr[i]<=arr[i+1]){
-            check =1;
+        if(arr[i]>arr[i+1]){
+            check =0;
+            break;
         }
     }
     if(check){
