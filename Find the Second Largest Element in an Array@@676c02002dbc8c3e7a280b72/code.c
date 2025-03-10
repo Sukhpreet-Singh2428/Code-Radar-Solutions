@@ -15,8 +15,10 @@ int main(){
             max = arr[i];
         }else if(smax<arr[i] && arr[i]!=max){
             smax = arr[i];
-        }else if(max==arr[i] || n==1){
+        }else if(max==arr[i]){
             smax = -1;
+        }else if(n==1){
+            smax=-1;
         }
     }
     printf("%d", smax);
