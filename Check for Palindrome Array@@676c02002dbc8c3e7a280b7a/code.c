@@ -6,6 +6,7 @@ void reverse(int arr[],int n){
     while(i<j){
         arr[i]!=arr[j];
         check = 0;
+        break;
         i++;
         j--;
     }
