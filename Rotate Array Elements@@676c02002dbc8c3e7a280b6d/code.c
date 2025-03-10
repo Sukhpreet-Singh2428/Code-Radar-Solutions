@@ -4,8 +4,8 @@ void reverse(int arr[],int a,int b){
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
-        return;
     }
+    return;
 }
 int main(){
     int n;
