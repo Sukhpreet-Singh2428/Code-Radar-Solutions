@@ -10,7 +10,7 @@ int main(){
     int max = INT_MIN;
     for(int i=0;i<n;i++){
         int prod = 1;
-        for(int j=i+1;i<n;j++){
+        for(int j=i+1;j<n;j++){
             prod = arr[i]*arr[j];
             if(prod > max ){
                 max = prod;
