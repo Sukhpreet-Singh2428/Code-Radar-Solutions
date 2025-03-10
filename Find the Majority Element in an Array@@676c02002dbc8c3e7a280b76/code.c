@@ -28,7 +28,7 @@ int main(){
             printf("%d", arr[idx]);
             break;
         }else{
-            notfound = 1
+            notfound = 1;
         }
     }
     if(notfound){
