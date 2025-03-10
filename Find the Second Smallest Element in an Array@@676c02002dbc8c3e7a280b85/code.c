@@ -10,15 +10,17 @@ int main(){
     int min = INT_MAX;
     int smin = INT_MAX;
     for(int i=0;i<n;i++){
-        if(min>arr[i] && n!=1){
+        if(min>arr[i]){
             smin = min;
             min = arr[i];
-        }else if(smin>arr[i] && arr[i]!=min && n!=1){
+        }else if(smin>arr[i] && arr[i]!=min){
             smin = arr[i];
-        }else if(min==arr[i] || n==1){
-            smin = -1;
         }
     }
-    printf("%d", smin);
+    if(smin==INT_MAX){
+        printf("%d",-1);
+    }else{
+        printf("%d", smin);
+    }
     return 0;
 }
