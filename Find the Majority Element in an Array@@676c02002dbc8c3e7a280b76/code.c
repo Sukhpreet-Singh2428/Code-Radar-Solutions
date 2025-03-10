@@ -9,6 +9,7 @@ int main(){
     for(int i=0;i<n;i++){
         int count = 0;
         int alreadycounted = 0;
+        int idx = 0
         for(int k=0;k<i;k++){
             if(arr[i]==arr[k]){
                 alreadycounted=1;
@@ -19,10 +20,11 @@ int main(){
         for(int j=0;j<n;j++){
             if(arr[i]==arr[j]){
                 count++;
+                idx = i;
             }
         }
         if(count>(n/2)){
-            printf("%d", count);
+            printf("%d", idx);
             break;
         }
     }
