@@ -4,9 +4,10 @@ void reverse(int arr[],int n){
     int j = n-1;
     int check = 1;
     while(i<j){
-        arr[i]!=arr[j];
-        check = 0;
-        break;
+        if(arr[i]!=arr[j]){
+            check = 0;
+            break;
+        }
         i++;
         j--;
     }
