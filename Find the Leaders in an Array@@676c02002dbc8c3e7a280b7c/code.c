@@ -7,9 +7,9 @@ int main(){
         scanf("%d", &arr[i]);
     }
     for(int i=0;i<n;i++){
-        int check = 1;
-        for(int j=0;j<n;j++){
-            if(arr[i]<arr[j]){
+        int check = 1;  // let true 
+        for(int j=i+1;j<n;j++){
+            if(arr[i]<arr[j]){  // false condition
                 check = 0;
             }
         }
