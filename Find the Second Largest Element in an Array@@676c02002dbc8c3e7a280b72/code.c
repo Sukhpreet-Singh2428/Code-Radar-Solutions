@@ -10,15 +10,19 @@ int main(){
     int max = INT_MIN;
     int smax = INT_MIN;
     for(int i=0;i<n;i++){
-        if(max<arr[i] && n!=1){
+        if(max<arr[i]){
             smax = max;
             max = arr[i];
-        }else if(smax<arr[i] && arr[i]!=max && n!=1){
+        }else if(smax<arr[i] && arr[i]!=max){
             smax = arr[i];
-        }else if(max==arr[i] || n==1){
+        }else if(max==arr[i]){
             smax = -1;
         }
     }
-    printf("%d", smax);
+    if(smax==INT_MIN){
+        printf("%d",-1);
+    }else{
+        printf("%d", smax);
+    }
     return 0;
 }
