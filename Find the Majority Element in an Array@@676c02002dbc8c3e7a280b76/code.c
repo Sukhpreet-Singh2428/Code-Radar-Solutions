@@ -24,7 +24,7 @@ int main(){
             }
         }
         if(count>(n/2)){
-            printf("%d", idx);
+            printf("%d", arr[idx]);
             break;
         }
     }
