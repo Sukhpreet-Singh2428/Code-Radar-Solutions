@@ -2,7 +2,7 @@
 #include<limits.h>
 int main(){
     int n;
-    scamf("%d",&n);
+    scanf("%d",&n);
     int arr[n];
     for(int i=0;i<n;i++){
         scanf("%d", &arr[i]);
