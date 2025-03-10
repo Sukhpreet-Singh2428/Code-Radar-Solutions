@@ -20,7 +20,7 @@ int main(){
         }
         if(count>(n/2)){
             printf("%d", count);
-        } else{
+        }else{
             printf("-1");
         }
     }
