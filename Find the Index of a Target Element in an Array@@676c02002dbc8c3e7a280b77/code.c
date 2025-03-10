@@ -8,7 +8,7 @@ int main(){
     }
     int k;
     scanf("%d", &k);
-    int idx;
+    int idx = -1;
     for(int i=0;i<n;i++){
         if(arr[i]==k){
             idx = i;
