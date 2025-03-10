@@ -23,8 +23,7 @@ int main(){
         }
         if(count>(n/2)){
             printf("%d", count);
-        }else{
-            printf(-1);
+            break;
         }
     }
     return 0;
