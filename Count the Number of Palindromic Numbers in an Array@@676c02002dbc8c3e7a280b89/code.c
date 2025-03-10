@@ -10,6 +10,7 @@ int main(){
     for(int i=0;i<n;i++){
         int original = arr[i];
         int reverse = 0;
+        if(arr[i]<0) continue;
         while(arr[i]){
             reverse = reverse*10 + arr[i]%10;
             arr[i] = arr[i]/10;
