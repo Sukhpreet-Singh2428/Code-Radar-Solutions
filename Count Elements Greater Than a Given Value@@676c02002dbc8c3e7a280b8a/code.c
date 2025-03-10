@@ -1,13 +1,11 @@
 #include<stdio.h>
 int main(){
-    int n;
-    scanf("%d", &n);
+    int n,k;
+    scanf("%d %d", &n,&k);
     int arr[n];
     for(int i=0;i<n;i++){
         scanf("%d", &arr[i]);
     }
-    int k;
-    scanf("%d", &k);
     int count = 0;
     for(int i=0;i<n;i++){
         if(k>arr[i]){
