@@ -13,8 +13,15 @@ int main(){
                 count++;
             }
         }
+        for(int k=0;k<i;i++){
+            if(arr[i]==arr[k]){
+                continue;
+            }
+        }
         if(count>(n/2)){
             printf("%d", count);
+        } else{
+            printf("-1")
         }
     }
     return 0;
