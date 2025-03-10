@@ -9,13 +9,13 @@ int main(){
     int k;
     scanf("%d", &k);
     int idx;
-    int notfound = 0
+    int notfound = 0;
     for(int i=0;i<n;i++){
         if(arr[i]==k){
             idx = i;
             break;
         }else{
-            notfound = 1
+            notfound = 1;
         }
     }
     if(notfound){
