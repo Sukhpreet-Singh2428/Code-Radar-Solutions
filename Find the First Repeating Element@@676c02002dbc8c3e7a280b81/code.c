@@ -16,6 +16,7 @@ int main(){
                 break;
             }
         }
+        if(count) break;
     }
     if(count){
         printf("%d",arr[idx]);
