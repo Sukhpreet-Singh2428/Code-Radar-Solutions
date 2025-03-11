@@ -29,4 +29,5 @@ int main(){
         }
     }
     printf("%d", arr[idx]);
+    return 0;
 }
