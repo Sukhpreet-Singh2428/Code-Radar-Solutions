@@ -12,7 +12,9 @@ int main(){
         int count = 0;
         int alreadycount = 0;
         for(int k=0;k<i;k++){
-            alreadycount = 1;
+            if(arr[k]==arr[i]){
+                alreadycount = 1;
+            }
             break;
         }
         if(alreadycount) continue;
