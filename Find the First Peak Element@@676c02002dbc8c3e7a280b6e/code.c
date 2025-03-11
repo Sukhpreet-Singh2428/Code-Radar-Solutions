@@ -18,6 +18,10 @@ int main(){
         scanf("%d", &arr[i]);
     }
     int idx = peakelement(arr,n);
-    printf("%d", arr[idx]);
+    if(idx<0){
+        printf("%d",-1);
+    }else{
+        printf("%d", arr[idx]);
+    }
     return 0;
 }
