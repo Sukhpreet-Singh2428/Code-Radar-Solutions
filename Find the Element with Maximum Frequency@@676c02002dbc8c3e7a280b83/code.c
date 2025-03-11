@@ -9,7 +9,7 @@ int main(){
     int max = 0;
     int idx = 0;
     for(int i=0;i<n;i++){
-        int count = 0
+        int count = 0;
         int alreadycount = 0;
         int IDX = 0;
         for(int k=0;k<i;k++){
