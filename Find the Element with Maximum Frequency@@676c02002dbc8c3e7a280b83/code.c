@@ -23,7 +23,7 @@ int main(){
                 count++;
             }
         }
-        if(max_f<=count){
+        if(max_f<count){
             max_f = count;
             idx = i;
         }
