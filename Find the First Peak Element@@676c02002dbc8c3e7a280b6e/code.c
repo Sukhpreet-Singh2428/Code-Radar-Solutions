@@ -6,10 +6,8 @@ int peakelement(int arr[],int n){
         else return 1;
     }
     for(int i=1;i<n-1;i++){
-        for(int j=i+1;j<n-1;j++){
-            if((arr[i]>arr[j-2]) && (arr[i]>arr[j])){
+        if((arr[i]>arr[i-1]) && (arr[i]>arr[i+1])){
             return i;
-        }
         }
     }
     return -1;
