@@ -9,8 +9,8 @@ int main(){
     }
     int T;
     scanf("%d", &T);
+    int flag1=INT_MAX,flag2=INT_MAX;
     for(int i=0;i<n;i++){
-        int flag1=INT_MAX,flag2=INT_MAX;
         for(int j=i+1;j<n;j++){
             if(arr[i]+arr[j]==T){
                 if(flag1!=arr[i] && flag2!=arr[j]){
