@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<limits.h>
+#include<stdlib.h> // for abs()
 int main(){
     int n;
     scanf("%d", &n);
@@ -11,7 +12,7 @@ int main(){
     int num1=0,num2=0;
     for(int i=0;i<n;i++){
         for(int j=i+1;j<n;j++){
-            int x = arr[i] - arr[j];
+            int x = abs(arr[i] - arr[j]);
             if(x<diff){
                 diff = x;
                 num1 = i;
