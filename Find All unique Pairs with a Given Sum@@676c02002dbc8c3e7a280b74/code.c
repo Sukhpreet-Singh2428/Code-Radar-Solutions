@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<stdbool.h>
+#include<limits.h>
 int main(){
     int n;
     scanf("%d",&n);
@@ -10,9 +10,9 @@ int main(){
     int T;
     scanf("%d", &T);
     for(int i=0;i<n;i++){
-        int flag1=false,flag2=true;
+        int flag1=INT_MAX,flag2=INT_MAX;
         for(int j=i+1;j<n;j++){
-            if(arr[i]+arr[j]==T && flag1==false && flag2==false){
+            if(arr[i]+arr[j]==T && flag1==INT_MAX && flag2==INT_MAX){
                 printf("%d %d\n",arr[i],arr[j]);
                 flag1 = arr[i];
                 flag2 = arr[j];
