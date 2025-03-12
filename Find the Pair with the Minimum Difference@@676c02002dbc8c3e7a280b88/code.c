@@ -24,7 +24,7 @@ int main(){
         }
     }
     if(arr[num1]<arr[num2]) printf("%d %d",arr[num1],arr[num2]);
-    else if(n==1) printf("%d",-1);
+    else if(n==1) printf("%d",-1);    // function bna ke jyada ache se represent ho jayega code!!
     else printf("%d %d",arr[num2],arr[num1]);
     return 0;
 }
