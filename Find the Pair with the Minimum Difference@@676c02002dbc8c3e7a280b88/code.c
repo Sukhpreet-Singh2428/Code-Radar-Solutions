@@ -20,7 +20,7 @@ int main(){
             }
         }
     }
-    if(arr[num1]>arr[num2]) printf("%d %d",arr[num1],arr[num2]);
+    if(arr[num1]<arr[num2]) printf("%d %d",arr[num1],arr[num2]);
     else printf("%d %d",arr[num2],arr[num1]);
     return 0;
 }
