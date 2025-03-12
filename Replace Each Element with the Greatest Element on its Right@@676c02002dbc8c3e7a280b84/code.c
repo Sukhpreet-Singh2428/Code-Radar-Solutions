@@ -8,7 +8,7 @@ int main(){
     }
     int brr[n];
     for(int i=1;i<n-1;i++){
-        for(int j=i+1;j<n;j++){
+        for(int j=i;j<n;j++){
             if(arr[i]<arr[j]){
                 brr[i-1] = arr[j];
             }
