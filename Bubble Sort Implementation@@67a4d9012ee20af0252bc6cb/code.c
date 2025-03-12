@@ -1,7 +1,7 @@
 void swap(int* i,int* j){
     int temp = *i;
     *i = *j;
-    *j = *i;
+    *j = temp;
     return;
 }
 void bubbleSort(int arr[],int n){
