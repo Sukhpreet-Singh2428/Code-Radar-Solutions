@@ -7,7 +7,7 @@ int main(){
         scanf("%d", &arr[i]);
     }
     int brr[n];
-    for(int i=0;i<n;i++){
+    for(int i=0;i<n-1;i++){
         for(int j=i+1;j<n;j++){
             if(arr[i]<arr[j]){
                 brr[i] = arr[j];
