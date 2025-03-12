@@ -17,6 +17,9 @@ int main(){
                 diff = x;
                 num1 = i;
                 num2 = j;
+            }else if(x==diff && arr[num1]>arr[i] && arr[num2]>arr[num1]){
+                num1 = i;
+                num2 = j;
             }
         }
     }
