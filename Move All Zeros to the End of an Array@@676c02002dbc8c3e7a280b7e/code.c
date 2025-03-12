@@ -1,8 +1,8 @@
 #include<stdio.h>
-void swap(int a,int b){
-    int temp = a;
-    a = b;
-    b = temp;
+void swap(int* a,int* b){
+    int temp = *a;
+    *a = *b;
+    *b = temp;
     return;
 }
 int main(){
@@ -18,7 +18,7 @@ int main(){
         if(arr[j]==0){
             j++;
         }else{
-            swap(arr[i],arr[j]);
+            swap(&arr[i],&arr[j]);
             i++;
             j++;
         }
