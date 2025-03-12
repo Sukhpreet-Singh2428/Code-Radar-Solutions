@@ -18,7 +18,7 @@ int main(){
         if(arr[j]==0){
             j++;
         }else{
-            swap(&arr[i],&arr[j]);
+            swap(arr[i],arr[j]);
             i++;
             j++;
         }
