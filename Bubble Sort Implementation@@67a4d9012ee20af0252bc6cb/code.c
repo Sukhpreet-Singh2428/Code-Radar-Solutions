@@ -1,3 +1,9 @@
+void swap(int* i,int* j){
+    int temp = *i;
+    *i = *j;
+    *j = *i;
+    return;
+}
 void bubbleSort(int arr[],int n){
     for(int i=0;i<n-1;i++){
         for(int j=0;j<n-1-i;j++){
@@ -6,11 +12,5 @@ void bubbleSort(int arr[],int n){
             }
         }
     }
-    return;
-}
-void swap(int* i,int* j){
-    int temp = *i;
-    *i = *j;
-    *j = *i;
     return;
 }
