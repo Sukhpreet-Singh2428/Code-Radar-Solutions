@@ -9,7 +9,7 @@ int main(){
     int T;
     scanf("%d", &T);
     for(int i=0;i<n;i++){
-        int flag1=0,flag2=0;
+        int flag1,flag2;
         for(int j=i+1;j<n;j++){
             if(arr[i]+arr[j]==T & arr[i]!=flag1 &arr[j]!=flag2){
                 printf("%d %d\n",arr[i],arr[j]);
