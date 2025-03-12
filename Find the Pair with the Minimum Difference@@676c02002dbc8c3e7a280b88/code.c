@@ -13,7 +13,7 @@ int main(){
     for(int i=0;i<n;i++){
         for(int j=i+1;j<n;j++){
             int x = abs(arr[i] - arr[j]);
-            if(x<diff && arr[num1]<arr[i]){
+            if(x<diff){
                 diff = x;
                 num1 = i;
                 num2 = j;
