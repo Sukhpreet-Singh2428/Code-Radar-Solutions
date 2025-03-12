@@ -7,7 +7,7 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d", &arr[i]);
     }
-    int diff = INT_MAX
+    int diff = INT_MAX;
     int num1=0,num2=0;
     for(int i=0;i<n;i++){
         for(int j=0;j<n;j++){
