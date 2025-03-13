@@ -16,7 +16,7 @@ int main(){
                 break;
             }
         }
-        // if(count) break;  // if finded then don't check further
+        if(count) break;  // if finded then don't check further
     }
     if(count){
         printf("%d",arr[idx]);
