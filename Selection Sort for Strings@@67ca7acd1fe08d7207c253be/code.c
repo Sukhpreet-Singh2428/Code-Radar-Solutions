@@ -3,7 +3,6 @@ void swap(char i[],char j[]){
     strcpy(temp,i);
     strcpy(i,j);
     strcpy(j,temp);
-    return;
 }
 void selectionSort(char arr[][100],int n){
     for(int i=0;i<n;i++){
@@ -15,11 +14,9 @@ void selectionSort(char arr[][100],int n){
         }
         swap(arr[i],arr[smallestIdx]);
     }
-    return;
 }
 void printArray(char arr[][100], int n){
     for(int i=0;i<n;i++){
         printf("%s ",arr[i]);
     }
-    return;
 }
