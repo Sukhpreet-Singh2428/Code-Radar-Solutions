@@ -8,6 +8,7 @@ void printPrimesInRange(int a,int b){
             }
         }
         if(isprime) printf("%d ",a);
+        else printf("No prime numbers");
         a++;
     }
 }
