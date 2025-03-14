@@ -29,6 +29,6 @@ int findUnsortedSubarray(int arr[],int n){
     while(right>left && arr[right]==brr[right]){
         right--;
     }
-    if(left>=right) return 0;
+    if(left>=right) return 0; // check if array is already sorted !! if array is sorted left will keeps increasing and right keeps decreasing
     else return right-left+1;
 }
