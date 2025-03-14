@@ -7,7 +7,6 @@ int main(){
         num >>= 1;
         pos++;
     }
-    return pos;
     printf("%d", pos); 
     return 0;
 }
