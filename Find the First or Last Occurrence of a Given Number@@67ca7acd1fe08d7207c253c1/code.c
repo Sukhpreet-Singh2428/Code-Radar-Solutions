@@ -7,7 +7,8 @@ int findOccurrence(int arr[],int n,int target,char mode){
                 break;
             }
         }
-        return idx;
+        if(idx==0) return -1;
+        else return idx;
     }else{
         int idx = 0;
         for(int i=n-1;i>=0;i--){
@@ -16,6 +17,7 @@ int findOccurrence(int arr[],int n,int target,char mode){
                 break;
             }
         }
-        return idx;
+        if(idx==0) return -1;
+        else return idx;
     }
 }
