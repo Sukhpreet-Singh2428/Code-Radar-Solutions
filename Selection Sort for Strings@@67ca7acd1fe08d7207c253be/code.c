@@ -12,7 +12,7 @@ void selectionSort(char arr[][100],int n){
                 smallestIdx = j;
             }
         }
-        swap(arr[i],arr[smallestIdx]);
+        if(smallestIdx != i) swap(arr[i],arr[smallestIdx]);
     }
 }
 void printArray(char arr[][100], int n){
