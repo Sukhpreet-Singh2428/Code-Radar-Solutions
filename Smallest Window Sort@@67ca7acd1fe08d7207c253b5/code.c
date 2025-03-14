@@ -8,7 +8,7 @@ void selectionsort(int brr[],int n){
     for(int i=0;i<n;i++){
         int smallestidx = i;
         for(int j=i+1;j<n;j++){
-            if(brr[j]<smallestidx){
+            if(brr[j]<brr[smallestidx]){
                 smallestidx = j;
             }
         }
