@@ -1,6 +1,6 @@
 int printPrimesInRange(int a,int b){
     int foundprime = 0;
-    if(a<2 && b<2) printf("No prime numbers");
+    if(b<2) printf("No prime numbers");
     else if(a<2) a=2;
     else{
         while(a<=b){
