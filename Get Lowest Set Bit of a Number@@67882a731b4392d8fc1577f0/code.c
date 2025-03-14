@@ -2,6 +2,12 @@
 int main(){
     int num,n;
     scanf("%d %d", &num,&n);
-    printf("%d", num & (-num)); 
+    int pos = 0;
+    while ((num & 1) == 0) { // Check LSB, shift right until we find 1
+        num >>= 1;
+        pos++;
+    }
+    return pos;
+    printf("%d", pos); 
     return 0;
 }
