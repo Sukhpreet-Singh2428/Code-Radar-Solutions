@@ -1,8 +1,8 @@
 void swap(char i[],char j[]){
     char temp[100];
-    strncpy(temp,i);
-    strncpy(i,j);
-    strncpy(j,temp);
+    strncpy(temp,i,99);
+    strncpy(i,j,99);
+    strncpy(j,temp,99);
 }
 void selectionSort(char arr[][100],int n){
     for(int i=0;i<n-1;i++){
