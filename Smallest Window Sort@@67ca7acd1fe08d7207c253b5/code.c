@@ -22,11 +22,13 @@ int findUnsortedSubarray(int arr[],int n){
         brr[i] = arr[i];
     }
     selectionsort(brr,n);
-    int count = 0;
-    for(int i=0;i<n;i++){
-        if(brr[i]==arr[i]){
-            count++;
-        }
+    int left = 0, right = n-1   // find first and last mismatch
+    while(left<n && arr[left]==brr[left]){
+        left++;
     }
-    return n-count;
+    while(right>left && arr[right]==brr[right]){
+        right++;
+    }
+    if(left>=right) return 0;
+    else return right-left+1
 }
