@@ -12,7 +12,7 @@ int printPrimesInRange(int a,int b){
         }
         if(isprime){
             printf("%d ",a);
-            foundprime = 1
+            foundprime = 1;
         }
         a++;
         }
