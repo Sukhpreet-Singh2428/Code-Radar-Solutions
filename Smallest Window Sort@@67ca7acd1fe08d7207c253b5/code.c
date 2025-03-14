@@ -24,9 +24,9 @@ int findUnsortedSubarray(int arr[],int n){
     selectionsort(brr,n);
     int count = 0;
     for(int i=0;i<n;i++){
-        if(brr[i]!=arr[i]){
+        if(brr[i]==arr[i]){
             count++;
         }
     }
-    return count;
+    return n-count;
 }
