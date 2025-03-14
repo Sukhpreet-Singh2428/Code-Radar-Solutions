@@ -6,7 +6,7 @@ void swap(int* i,int* j){
 }
 void selectionSort(int arr[],int n){
     for(int i=0;i<n;i++){
-        int smallestIdx = i''
+        int smallestIdx = i;
         for(int j=i+1;i<n;j++){
             if(arr[j]<arr[smallestIdx]){
                 smallestIdx = j;
