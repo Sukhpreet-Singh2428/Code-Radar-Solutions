@@ -13,7 +13,7 @@ void selectionSort(char arr[][100],int n){
                 smallestIdx = j;
             }
         }
-        swap(&arr[i],&arr[smallestIdx]);
+        swap(arr[i],arr[smallestIdx]);
     }
     return;
 }
