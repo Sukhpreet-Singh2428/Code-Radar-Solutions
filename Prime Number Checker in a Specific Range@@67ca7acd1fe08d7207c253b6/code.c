@@ -6,7 +6,7 @@ void printPrimesInRange(int a,int b){
                 isprime = 0;
             }
         }
-        if(isprime) printf("%d ",isprime);
+        if(isprime) printf("%d ",a);
         a++;
     }
 }
