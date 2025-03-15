@@ -4,7 +4,7 @@ int fibo(int n){
     return fibo(n-1)+fibo(n-2);
 }
 void fibonacciSeries(int n){
-    for(int i=0;i<=n;i++){
+    for(int i=0;i<n;i++){
         printf("%d ",fibo(i));
     }
     return;
