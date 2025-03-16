@@ -25,11 +25,10 @@ int main(){
         scanf("%d",&arr[i]);
     }
     selectionSort(arr,n);
-    int count = 0;
+    int count = 1;
     for(int i=0;i<n;i++){
         if(arr[i+1]-arr[i]==1) count++;
     }
-    if(count==0) printf("%d",-1);
-    else printf("%d",count);
+    printf("%d",count);
     return 0;
 }
