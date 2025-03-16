@@ -11,3 +11,6 @@ int findKthMissing(int arr[], int n, int k) {
     }
     return -1;  // Should not reach here
 }
+//arr[5] = {2,3,4,7,11} , k=5 : output=9 
+// this is little different from smallest Missing Positive integer but now we have to tell the particular
+// kth missing number the i.e, the 5 missing number in the example array is 9 so output is 9.
