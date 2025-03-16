@@ -1,7 +1,7 @@
 void insertionSort(int arr[],int n){
     for(int i=1;i<n;i++){
         int curr = arr[i];
-        prev = i-1;
+        int prev = i-1;
         while(prev>=o && arr[prev]>curr){
             arr[prev+1] = arr[prev];
             prev--;
