@@ -11,6 +11,6 @@ void insertionSort(int arr[],int n){
 }
 int kthSmallest(int arr[],int n,int k){
     insertionSort(arr,n);
-    if(k>=n) return -1;
+    if(k>n) return -1;
     return arr[k-1];
 }
