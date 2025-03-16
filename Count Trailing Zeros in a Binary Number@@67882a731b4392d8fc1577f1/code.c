@@ -9,7 +9,7 @@ int main() {
         count++;
         num >>= 1;  // Shift right to check the next bit
         }
-        print("%d",count);
+        printf("%d",count);
     }
     return 0;
 }
