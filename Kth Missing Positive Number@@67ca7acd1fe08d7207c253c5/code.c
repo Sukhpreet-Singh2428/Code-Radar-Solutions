@@ -9,7 +9,7 @@ int findKthMissing(int arr[], int n, int k) {
         }
         curr++;  // Check the next number
     }
-    return -1;  // Should not reach here
+    return -1;
 }
 //arr[5] = {2,3,4,7,11} , k=5 : output=9 
 // this is little different from smallest Missing Positive integer but now we have to tell the particular
