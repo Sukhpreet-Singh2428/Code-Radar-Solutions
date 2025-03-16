@@ -1,7 +1,13 @@
-int findKthMissing(int arr[],int n,int k){
-    int smallest = arr[0];  // smallest positive number possible is 1 but in this question we have to tell at particular kth element.
-    for(int i=0;i<=k-1;i++){
-        smallest++;
+int findKthMissing(int arr[], int n, int k) {
+    int missingCount = 0, curr = 1, i = 0;
+    while (missingCount < k) {
+        if (i < n && arr[i] == curr) {
+            i++;  // Move to next array element
+        } else {
+            missingCount++;  // Found a missing number
+            if (missingCount == k) return curr;
+        }
+        curr++;  // Check the next number
     }
-    return smallest;
+    return -1;  // Should not reach here
 }
