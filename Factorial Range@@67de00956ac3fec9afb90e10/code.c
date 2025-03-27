@@ -1,6 +1,6 @@
 void factorial(int start){
     int fact = 1;
-    for(int i=0;i<=start;i++){
+    for(int i=1;i<=start;i++){
         fact *= i;
     }
     printf("%d\n", fact);
