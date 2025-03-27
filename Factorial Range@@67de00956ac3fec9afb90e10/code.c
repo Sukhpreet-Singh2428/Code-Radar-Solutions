@@ -6,7 +6,10 @@ void factorial(int start){
     printf("%d\n", fact);
 }
 void factorialRange(int start, int end){
-    if(start>end || (start < 0 || end < 0)) printf("Invalid range");
+    if(start>end || (start < 0 || end < 0)){
+        printf("Invalid range");
+        return;
+    }
     while(start<=end){
         factorial(start);
         start++;
