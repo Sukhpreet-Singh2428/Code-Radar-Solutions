@@ -2,7 +2,7 @@
 #include<strings.h>
 int main(){
     char str[40];
-    gets(str);
+    fgets(str);
     int k=0;
     int size=0;
     while(str[k]!='\0'){
