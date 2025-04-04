@@ -9,7 +9,6 @@ int main(){
         size++;
         k++;
     }
-    if(str=='\0') printf("%d",0);
-    else printf("%d",size);
+    printf("%d",size);
     return 0;
 }
