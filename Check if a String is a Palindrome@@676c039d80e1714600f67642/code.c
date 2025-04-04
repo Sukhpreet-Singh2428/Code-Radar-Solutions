@@ -14,7 +14,7 @@ int main(){
     int size = 0;
     while(str[k]!='\0'){
         size++;
-        k++
+        k++;
     }
     char str1[40];
     for(int i=0;i<size;i++){
