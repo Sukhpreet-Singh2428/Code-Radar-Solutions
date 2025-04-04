@@ -2,7 +2,7 @@
 #include<string.h>
 int main(){
     char str[40];
-    scanf("%s",str);
+    scanf("%[^\n]s",str);
     int i = 0;
     int vowel = 0;
     while(str[i]!='\0'){
