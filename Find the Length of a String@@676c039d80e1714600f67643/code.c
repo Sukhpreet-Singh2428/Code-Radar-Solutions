@@ -6,7 +6,7 @@ int main(){
     fgets(str, sizeof(str), stdin);
     int k = 0;
     int size = 0;
-    while(str[k]!='\0' && str[k]!='\n'){
+    while(str[k]!='\0' && str[k]!='\n' && str[k]!=' '){
         size++;
         k++;
     }
