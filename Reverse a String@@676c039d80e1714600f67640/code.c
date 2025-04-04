@@ -1,8 +1,8 @@
 #include<stdio.h>
-#include<strings.h>
+#include<string.h>
 int main(){
     char str[40];
-    fgets(str);
+    gets(str);
     int k=0;
     int size=0;
     while(str[k]!='\0'){
