@@ -4,7 +4,7 @@ int main(){
     char str[40];
     fgets(str, sizeof(str), stdin);
     char ch;
-    scanf(" %c",&ch);
+    scanf("%c",&ch);
     int count = 0;
     for(int i=0;i<strlen(str);i++){
         if(str[i]==ch) count++;
