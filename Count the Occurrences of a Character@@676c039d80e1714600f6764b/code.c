@@ -2,7 +2,7 @@
 #include<string.h>
 int main(){
     char str[40];
-    scanf(" [^\n]s",str);
+    scanf(" [^\n]",str);
     char ch;
     scanf(" %c",&ch);
     int count = 0;
