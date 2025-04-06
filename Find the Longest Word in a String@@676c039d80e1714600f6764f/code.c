@@ -12,7 +12,7 @@ int main(){
     int count=0,flag=0;
     int idx1=0,idx2=0;
     for(int i=0;str[i]!='\0';i++){
-        if(str[i]==' ' || str[i]=='\0'){
+        if(str[i]==' '){
             flag = size(str,start,i-1);
             if(flag>count){
                 count = flag;
