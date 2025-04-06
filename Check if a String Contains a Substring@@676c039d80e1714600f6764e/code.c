@@ -21,7 +21,7 @@ int main(){
         if(str1[i]==' ' || str1[i]=='\0'){
             flag = check(str1,str2,start,i-1);
         }
-        start = start + i;
+        start = i+1;
         if(flag==1){
             printf("Yes");
             break;
