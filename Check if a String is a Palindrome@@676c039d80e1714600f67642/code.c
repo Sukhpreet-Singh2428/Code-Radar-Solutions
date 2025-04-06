@@ -16,10 +16,10 @@ int main(){
         size++;
         k++;
     }
-    char str1[40];
-    for(int i=0;i<size;i++){
-        str1[i] = str[i];
-    }
+    char str1[40] = strcpy(str);
+    // for(int i=0;i<size;i++){
+    //     str1[i] = str[i];
+    // }
     reverse(str1,size);
     int flag = 0;
     for(int i=0;i<size;i++){
