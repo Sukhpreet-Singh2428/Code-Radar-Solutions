@@ -11,7 +11,7 @@ int main(){
     int start = 0;
     int count, flag= 0;
     int idx1,idx2 = 0;
-    for(int i=0;i!=str[i];i++){
+    for(int i=0;str[i]!='\0';i++){
         if(str[i]==' ' || str[i]=='\0'){
             flag = size(str,start,i-1);
             if(flag>count){
