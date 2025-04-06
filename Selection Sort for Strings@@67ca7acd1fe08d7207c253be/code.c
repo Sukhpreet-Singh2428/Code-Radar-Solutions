@@ -1,3 +1,4 @@
+#include<string.h>
 void swap(char i[], char j[]){
     char temp[100];
     strcpy(temp,i);
