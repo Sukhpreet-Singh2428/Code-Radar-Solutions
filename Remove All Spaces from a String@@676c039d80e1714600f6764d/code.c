@@ -10,6 +10,6 @@ int main(){
         }
     }
     str[j] = '\0';
-    pust(str);
+    puts(str);
     return 0;
 }
