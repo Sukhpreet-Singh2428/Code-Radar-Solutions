@@ -1,22 +1,22 @@
-void swap(char* i, char* j){
-    char temp = *i;
-    *i = *j;
-    *j = temp;
+void swap(char i[], char j[]){
+    char temp[100];
+    strcpy(temp,i);
+    strcpy(i,j);
+    strcpy(j,temp);
 }
 void selectionSort(char arr[][100], int n){
     for(int i=0;i<n;i++){
         int smallestIdx = i;
         for(int j=i+1;j<n;j++){
-            if(arr[j]<arr[smallestIdx]){
+            if(strcmp(arr[j], arr[smallestIdx]) < 0){
                 smallestIdx = j;
             }
         }
-        swap(&arr[i],&arr[smallestIdx]);
+        swap(arr[i],arr[smallestIdx]);
     }
 }
-void printArray(char* arr, int n){
+void printArray(char arr[][100], int n){
     for(int i=0;i<n;i++){
-        printf("%c",arr[i]);
+        puts(arr[i]);
     }
-    printf("\n");
 }
