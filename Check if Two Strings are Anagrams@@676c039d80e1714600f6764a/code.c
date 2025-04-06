@@ -15,6 +15,9 @@ int main(){
     char str1[40], str2[40];
     fgets(str1, sizeof(str1), stdin);
     fgets(str2, sizeof(str2), stdin);
+    // remove newline
+    str1[strcspn(str1, "\n")] = '\0';
+    str2[strcspn(str2, "\n")] = '\0';
     sort(str1, strlen(str1));
     sort(str2, strlen(str2));
     int flag=1;
