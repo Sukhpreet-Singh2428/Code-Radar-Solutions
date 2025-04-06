@@ -19,8 +19,8 @@ int main(){
                 idx1 = start;
                 idx2 = i-1;
             }
-            start = i+1;
         }
+        start = i+1;
     }
     for(int i=idx1; i<=idx2; i++){
         printf("%c",str[i]);
