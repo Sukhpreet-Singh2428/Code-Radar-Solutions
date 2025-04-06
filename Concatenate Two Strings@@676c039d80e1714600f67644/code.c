@@ -2,7 +2,7 @@
 #include<string.h>
 int main(){
     char str1[40], str2[40];
-    fgets(str1, sizeof(str1), stdin);
+    fgets(str1, sizeof(str1), stdin);  // --> str1\n\0
     fgets(str2, sizeof(str2), stdin);
     // Remove trailing newline if present
     str1[strcspn(str1, "\n")] = '\0';
