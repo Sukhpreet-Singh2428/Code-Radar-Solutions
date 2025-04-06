@@ -3,10 +3,10 @@
 int check(char* str1, char* str2, int start, int end){
     int j = 0, flag=1;
     for(int i=start; i<=end; i++){
-        if(str1[i]!=str2[j++])[
+        if(str1[i]!=str2[j++]){
             flag = 0;
             break;
-        ]
+        }
     }
     if(flag) return 1;
     else return 0;
