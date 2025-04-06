@@ -13,7 +13,7 @@ int main(){
     char str[40];
     fgets(str, sizeof(str), stdin);
     int start = 0;
-    for(int i=0; i<strlen(str); i++){
+    for(int i=0; i<=strlen(str); i++){
         if(str[i]==' ' || str[i]=='\0'){
             reverse(str,start,i-1);
             start = i+1;
