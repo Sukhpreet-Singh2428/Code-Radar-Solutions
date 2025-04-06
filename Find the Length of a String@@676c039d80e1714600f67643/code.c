@@ -5,8 +5,8 @@ int main(){
     // scanf("%[^\n]s",str);
     fgets(str, sizeof(str), stdin);
     int size = 0;
-    while(str[size]!='\0'){
-        if(str[size]=='\n') break;
+    while(str[size]!='\0' && str[size]!='\n'){
+        // if(str[size]=='\n') break;
         size++;
     }
     printf("%d",size);
