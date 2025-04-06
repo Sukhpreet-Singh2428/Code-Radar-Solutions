@@ -12,7 +12,6 @@ int main(){
         str1[i] = str2[j++];
     }
     str1[strlen(str1)+j] = '\0';
-    // puts(str1);
-    printf("%s", str1);
+    puts(str1);
     return 0;
 }
