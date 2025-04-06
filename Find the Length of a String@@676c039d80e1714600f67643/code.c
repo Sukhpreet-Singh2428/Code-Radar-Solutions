@@ -4,8 +4,9 @@ int main(){
     char str[40];
     // scanf("%[^\n]s",str);
     fgets(str, sizeof(str), stdin);
+    str1[strcspn(str,"\n")] = '\0';
     int size = 0;
-    while(str[size]!='\0' && str[size]!='\n'){
+    while(str[size]!='\0'){
         // if(str[size]=='\n') break;
         size++;
     }
