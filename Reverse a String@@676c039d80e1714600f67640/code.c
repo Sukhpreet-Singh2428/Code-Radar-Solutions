@@ -9,7 +9,7 @@ int main(){
         size++;
         k++;
     }
-    for(int i=0,j=size-1; i<=j; i++,j--){
+    for(int i=0,j=size-1; i<=j; i++,j--){   // or built-in fuction strrev(str);
         char temp = str[i];
         str[i] = str[j];
         str[j] = temp;
