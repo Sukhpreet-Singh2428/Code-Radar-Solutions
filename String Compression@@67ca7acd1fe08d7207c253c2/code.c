@@ -8,6 +8,6 @@ void compressString(char* str, char* compressed){
         for(int k=i+1;k<len;k++){
             if(ch==str[k]) count++;
         }
-        sprintf(compressed, "%c%d", ch, count);
+        sprintf(compressed[j++], "%c%d", ch, count);
     }
 }
