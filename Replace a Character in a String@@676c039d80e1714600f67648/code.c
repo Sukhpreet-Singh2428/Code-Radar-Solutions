@@ -10,5 +10,6 @@ int main(){
             str[i] = new_ch;
         }
     }
-    puts(str);
+    printf("%s",str);
+    return 0;
 }
