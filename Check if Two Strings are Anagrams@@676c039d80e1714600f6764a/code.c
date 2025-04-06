@@ -18,6 +18,11 @@ int main(){
     // remove newline
     str1[strcspn(str1, "\n")] = '\0';
     str2[strcspn(str2, "\n")] = '\0';
+    // if lengths differ, can't be anagrams
+    if(strlen(str1) != strlen(str2)){
+        puts("No");
+        return 0;
+    }
     sort(str1, strlen(str1));
     sort(str2, strlen(str2));
     int flag=1;
