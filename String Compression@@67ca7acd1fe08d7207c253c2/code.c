@@ -12,10 +12,12 @@ void compressString(char* str, char* compressed) {
         // Add character
         compressed[j++] = ch;
         // Convert count to string and append
-        char countStr[10];
-        sprintf(countStr, "%d", count);
-        for(int k = 0; countStr[k] != '\0'; k++) {
-            compressed[j++] = countStr[k];
+        if(count>1){                  // Add count only if >1
+            char countStr[10];
+            sprintf(countStr, "%d", count);
+            for(int k = 0; countStr[k] != '\0'; k++) {
+                compressed[j++] = countStr[k];
+            }
         }
         i++; // Move to next new character
     }
