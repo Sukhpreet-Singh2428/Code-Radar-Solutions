@@ -16,7 +16,7 @@ int main(){
     fgets(str1, sizeof(str1), stdin);
     fgets(str2, sizeof(str2), stdin);
     // remove newline
-    str1[strcspn(str1, "\n")] = '\0';
+    str1[strcspn(str1, "\n")] = '\0'; // strcpsn(): Only finds the first occurrence or we can use loop to change "\n" to '\0
     str2[strcspn(str2, "\n")] = '\0';
     // if lengths differ, can't be anagrams
     if(strlen(str1) != strlen(str2)){
