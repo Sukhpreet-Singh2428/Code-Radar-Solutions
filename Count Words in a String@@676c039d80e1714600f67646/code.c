@@ -5,7 +5,7 @@ int main(){
     char str[40];
     fgets(str, sizeof(str), stdin);
     int count = 0;
-    int inWord = 0
+    int inWord = 0;
     for(int i=0; str[i]!='\0'; i++){
         if(!isspace(str[i]) && inWord==0){
             count++;
