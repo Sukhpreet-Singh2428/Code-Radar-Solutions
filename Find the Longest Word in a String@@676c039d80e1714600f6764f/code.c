@@ -2,7 +2,7 @@
 #include<string.h>
 int size(char* str, int start, int end){
     int k = 0;
-    for(int i=start;i=end;i++) k++;
+    for(int i=start;i<=end;i++) k++;
     return k;
 }
 int main(){
@@ -22,7 +22,7 @@ int main(){
             start = i+1;
         }
     }
-    for(int i=idx1; i=idx2; i++){
+    for(int i=idx1; i<=idx2; i++){
         printf("%c",str[i]);
     }
     return 0;
