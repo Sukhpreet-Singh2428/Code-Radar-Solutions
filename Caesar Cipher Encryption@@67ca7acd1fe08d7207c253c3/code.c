@@ -1,4 +1,4 @@
-void caserCipher(char* message, int shift, char* encrypted){
+void caeserCipher(char* message, int shift, char* encrypted){
     for(int i=0; message[i]!='\0';i++){
         char ch = message[i];
         if(ch>='a' && ch<='z'){
