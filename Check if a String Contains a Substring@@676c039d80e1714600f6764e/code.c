@@ -24,7 +24,9 @@ int main(){
         start = i+1;
         if(flag==1){
             printf("Yes");
-            break;
+            return 0;
         }
     }
+    printf("No");
+    return 0;
 }
