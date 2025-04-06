@@ -3,7 +3,7 @@
 int count(char* str, int start, int end){
     int k = 0;
     for(int i=start;i=end;i++) k++;
-    return k
+    return k;
 }
 int main(){
     char str[40];
