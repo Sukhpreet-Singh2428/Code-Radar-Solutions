@@ -3,11 +3,9 @@
 int main(){
     char str[40];
     scanf("%s",str);
-    int k=0;
     int size=0;
-    while(str[k]!='\0'){
+    while(str[size]!='\0'){
         size++;
-        k++;
     }
     for(int i=0,j=size-1; i<=j; i++,j--){   // or built-in fuction strrev(str);
         char temp = str[i];
