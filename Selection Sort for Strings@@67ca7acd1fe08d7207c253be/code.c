@@ -1,4 +1,4 @@
-void swap(int* i, int* j){
+void swap(char* i, char* j){
     char temp = *i;
     *i = *j;
     *j = temp;
