@@ -1,10 +1,12 @@
 #include<stdio.h>
 #include<string.h>
 void reverse(char* str, int start, int end){
-    for(int start=0,end=strlen(str)-1; start<=end; start++,end--){
+    while(start<=end){
         char temp = str[start];
         str[start] = str[end];
         str[end] = temp;
+        start++;
+        end--;
     }
 }
 int main(){
