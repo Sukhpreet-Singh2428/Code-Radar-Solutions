@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<string.h>
-int count(char* str, int start, int end){
+int size(char* str, int start, int end){
     int k = 0;
     for(int i=start;i=end;i++) k++;
     return k;
@@ -13,7 +13,7 @@ int main(){
     int idx1,idx2 = 0;
     for(int i=0;str[i]!=0;i++){
         if(str[i]==' ' || str[i]=='\0'){
-            flag = count(str,start,i-1);
+            flag = size(str,start,i-1);
             if(flag>count){
                 count = flag;
                 idx1 = start;
