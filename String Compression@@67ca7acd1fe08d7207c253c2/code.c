@@ -5,7 +5,7 @@ void compressString(char* str, char* compressed) {
     for(int i = 0; i < len;) {
         char ch = str[i];
         int count = 1;
-        while(i + 1 < len && str[i] == str[i + 1]) {
+        while(i+1 < len && ch == str[i + 1]) {
             count++;
             i++;
         }
