@@ -4,11 +4,10 @@ int main(){
     char str[40];
     // scanf("%[^\n]s",str);
     fgets(str, sizeof(str), stdin);
-    int k = 0;
     int size = 0;
-    while(str[k]!='\0'){
+    while(str[size]!='\0'){
+        if(str[size]=='\n') break;
         size++;
-        k++;
     }
     printf("%d",size);
     return 0;
