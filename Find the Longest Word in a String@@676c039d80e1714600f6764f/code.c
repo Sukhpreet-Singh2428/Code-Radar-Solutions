@@ -9,8 +9,8 @@ int main(){
     char str[40];
     fgets(str, sizeof(str), stdin);
     int start = 0;
-    int count, flag= 0;
-    int idx1,idx2 = 0;
+    int count=0,flag=0;
+    int idx1=0,idx2=0;
     for(int i=0;str[i]!='\0';i++){
         if(str[i]==' ' || str[i]=='\0'){
             flag = size(str,start,i-1);
