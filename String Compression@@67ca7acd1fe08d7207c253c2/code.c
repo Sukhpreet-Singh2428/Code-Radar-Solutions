@@ -22,4 +22,8 @@ void compressString(char* str, char* compressed) {
         i++; // Move to next new character
     }
     compressed[j] = '\0';  // Null-terminate
+     // Check if compressed is actually shorter
+    if (strlen(compressed) >= strlen(str)) {
+        strcpy(compressed, str);  // Copy original if not shorter
+    }
 }
