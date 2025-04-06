@@ -17,10 +17,12 @@ int main(){
     fgets(str2, sizeof(str2), stdin);
     sort(str1, strlen(str1));
     sort(str2, strlen(str2));
-    int flag=0;
+    int flag=1;
     for(int i=0;i<strlen(str1);i++){
-        if(str1[i]==str2[i]) flag = 1;
-        else flag = 0;
+        if(str1[i]!=str2[i]){
+            flag = 0;
+            break;
+        }
     }
     if(flag) puts("Yes");
     else puts("No");
