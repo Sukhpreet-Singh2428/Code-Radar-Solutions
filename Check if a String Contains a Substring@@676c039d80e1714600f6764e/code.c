@@ -22,7 +22,7 @@ int main(){
             flag = check(str1,str2,start,i-1);
         }
         start = start + i;
-        if(flag){
+        if(flag==1){
             printf("Yes");
             break;
         }
