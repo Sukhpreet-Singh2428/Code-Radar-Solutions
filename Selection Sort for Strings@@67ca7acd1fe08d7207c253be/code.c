@@ -3,7 +3,7 @@ void swap(char* i, char* j){
     *i = *j;
     *j = temp;
 }
-void selectionSort(char* arr, int n){
+void selectionSort(char arr[][100], int n){
     for(int i=0;i<n;i++){
         int smallestIdx = i;
         for(int j=i+1;j<n;j++){
