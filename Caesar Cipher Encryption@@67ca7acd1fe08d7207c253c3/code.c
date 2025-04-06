@@ -1,3 +1,4 @@
+#include<string.h>
 void caesarCipher(char* message, int shift, char* encrypted){
     for(int i=0;i<=strlen(message);i++){
         char ch = message[i];
