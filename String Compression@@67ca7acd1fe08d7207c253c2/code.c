@@ -1,13 +1,23 @@
 #include<string.h>
-void compressString(char* str, char* compressed){
-    int j = 0;
+void compressString(char* str, char* compressed) {
     int len = strlen(str);
-    for(int i=0; i<len; i++){
+    int j = 0;  // index for compressed
+    for(int i = 0; i < len;) {
         char ch = str[i];
         int count = 1;
-        for(int k=i+1;k<len;k++){
-            if(ch==str[k]) count++;
+        while(i + 1 < len && str[i] == str[i + 1]) {
+            count++;
+            i++;
         }
-        sprintf(compressed[j++], "%c%d", ch, count);
+        // Add character
+        compressed[j++] = ch;
+        // Convert count to string and append
+        char countStr[10];
+        sprintf(countStr, "%d", count);
+        for(int k = 0; countStr[k] != '\0'; k++) {
+            compressed[j++] = countStr[k];
+        }
+        i++; // Move to next new character
     }
+    compressed[j] = '\0';  // Null-terminate
 }
