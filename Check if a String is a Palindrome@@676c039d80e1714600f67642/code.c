@@ -16,7 +16,8 @@ int main(){
         size++;
         k++;
     }
-    char str1[40] = strcpy(str);
+    char str1[40];
+    strcpy(str1,str);
     // for(int i=0;i<size;i++){
     //     str1[i] = str[i];
     // }
