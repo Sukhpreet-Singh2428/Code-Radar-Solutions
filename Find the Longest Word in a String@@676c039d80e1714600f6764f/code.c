@@ -8,6 +8,7 @@ int size(char* str, int start, int end){
 int main(){
     char str[40];
     fgets(str, sizeof(str), stdin);
+    str[strcspn(str,"\n")] = '\0';
     int start = 0;
     int count=0,flag=0;
     int idx1=0,idx2=0;
