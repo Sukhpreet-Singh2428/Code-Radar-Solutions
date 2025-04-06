@@ -22,6 +22,6 @@ int main(){
         if(str1[i]!=str2[i]) flag = 0;
     }
     if(!flag) puts("No");
-    else if(flag) puts("Yes")
+    else if(flag) puts("Yes");
     return 0;
 }
