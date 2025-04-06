@@ -21,7 +21,7 @@ int main(){
     for(int i=0;i<strlen(str1);i++){
         if(str1[i]!=str2[i]) flag = 0;
     }
-    if(flag) puts("Yes");
-    else puts("No");
+    if(!flag) puts("No");
+    else puts("Yes");
     return 0;
 }
