@@ -9,21 +9,22 @@ void reverse(char str1[], int size){
 }
 int main(){
     char str[40];
-    scanf("%[^\n]s",str);
-    int k = 0;
-    int size = 0;
-    while(str[k]!='\0'){
-        size++;
-        k++;
-    }
+    // scanf("%[^\n]s",str);
+    // int k = 0;
+    // int size = 0;
+    // while(str[k]!='\0'){
+    //     size++;
+    //     k++;
+    // }
+    fgets(str, sizeof(str), stdin);
     char str1[40];
     strcpy(str1,str);
     // for(int i=0;i<size;i++){
     //     str1[i] = str[i];
     // }
-    reverse(str1,size);
+    reverse(str1,strlen(str));
     int flag = 0;
-    for(int i=0;i<size;i++){
+    for(int i=0;i<strlen(str);i++){
         if(str[i]==str1[i]) flag = 1;
         else flag = 0;
     }
