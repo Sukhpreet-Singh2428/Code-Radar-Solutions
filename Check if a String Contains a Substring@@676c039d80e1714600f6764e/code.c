@@ -17,14 +17,12 @@ int main(){
     int flag = 0;
     for(int i=0; i<=strlen(str1); i++){
         if(str1[i]==' ' || str1[i]=='\0'){
+            if(flag) break;
             flag = check(str1,str2,start,i-1);
         }
         start = i+1;
-        if(flag==1){
-            printf("Yes");
-            return 0;
-        }
     }
-    printf("No");
+    if(flag) printf("Yes");
+    else printf("No");
     return 0;
 }
