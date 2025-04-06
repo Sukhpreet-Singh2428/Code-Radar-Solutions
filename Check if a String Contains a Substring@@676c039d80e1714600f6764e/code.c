@@ -18,7 +18,7 @@ int main(){
     int start = 0;
     int flag = 0;
     for(int i=0; i<=strlen(str1); i++){
-        if(str1[i]==" " || str1[i]=='\0'){
+        if(str1[i]==' ' || str1[i]=='\0'){
             flag = check(str1,str2,start,i-1);
         }
         start = start + i;
