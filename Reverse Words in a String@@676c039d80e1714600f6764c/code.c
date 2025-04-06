@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<string.h>
 void reverse(char* str, int start, int end){
-    while(start<=end){
+    while(start<end){
         char temp = str[start];
         str[start] = str[end];
         str[end] = temp;
