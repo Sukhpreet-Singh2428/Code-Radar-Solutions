@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<string.h>
-int void check(char* str1, char* str2, int start, int end){
+int check(char* str1, char* str2, int start, int end){
     int j = 0, flag=1;
     for(int i=start; i<=end; i++){
         if(str1[i]!=str2[j++])[
