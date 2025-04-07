@@ -12,6 +12,6 @@ int main(){
             str[i] = ch;
         }
     }
-    puts(str);
+    printf("%s",str);
     return 0;
 }
