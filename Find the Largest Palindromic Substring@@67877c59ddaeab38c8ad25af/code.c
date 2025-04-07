@@ -21,12 +21,8 @@ int main(){
     reverse(str1,len);
     int i = 0;
     int j = len-1;
-    while(i<=j){
-        if(str[i]==str1[i]) break;
-        if(str[j]==str1[j]) break;
-        i++;
-        j--;
-    }
+    while(i<len && str[i]==str1[i]) i++;
+    while(j>=0 && str[j]==str1[j]) j--;
     for(int k=i;k<=j;k++){
         printf("%c",str[k]);
     }
