@@ -5,7 +5,7 @@ int main(){
     fgets(str, sizeof(str), stdin);
     str[strcspn(str,"\n")] = '\0';
     int maxfeq = 0;
-    int maxchar = 0;
+    char maxchar;
     for(int i=0;i<strlen(str);i++){
         int count = 0;
         char ch = str[i];
