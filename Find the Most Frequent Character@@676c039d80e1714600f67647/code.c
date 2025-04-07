@@ -15,7 +15,7 @@ int main(){
         if(count>maxfeq){
             maxfeq = count;
             maxchar = str[i];
-        }else if(count==maxfreq){
+        }else if(count==maxfeq){
             if(maxchar>str[i]) maxchar = str[i];
         }
     }
