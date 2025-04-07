@@ -1,7 +1,15 @@
 #include<stdio.h>
-#include<strings.h>
+#include<string.h>
 void reverse(char* str1, int len){
-    strrev(str1);
+    int i = 0;
+    int j = len-1;
+    while(i<=j){
+        char temp = str1[i];
+        str1[i] = str1[j];
+        str1[j] = temp;
+        i++;
+        j--;
+    }
 }
 int main(){
     char str[40];
