@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<string.h>
-void palindrome(char* str, int len){
+void palindrome(char* str1, int len){
     for(int i=0,j=len;i<=j;i++,j--){
         char temp = str1[i];
         str1[i] = str1[j];
