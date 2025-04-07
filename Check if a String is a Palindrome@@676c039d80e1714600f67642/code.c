@@ -24,7 +24,7 @@ int main(){
     // }
     reverse(str1,strlen(str));
     int flag = 0;
-    for(int i=0;i<strlen(str);i++){
+    for(int i=0;i<strlen(str);i++){     // if(strcmp(str,str1)==0) puts("Yes"); <-- simple, without using this loop and flag
         if(str[i]==str1[i]) flag = 1;
         else flag = 0;
     }
