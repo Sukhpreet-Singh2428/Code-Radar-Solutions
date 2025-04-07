@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<string.h>
-void firstNonRepeated(char* str, int len){
+int firstNonRepeated(char* str, int len){
     for(int i=0;i<len;i++){
         int count = 1;
         for(int j=i+1;j<len;j++){
