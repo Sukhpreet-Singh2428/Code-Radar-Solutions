@@ -13,7 +13,7 @@ int main(){
             if(str[k]==str[i]) alreadycount = 1;
         }
         if(alreadycount) continue;
-        for(int j=i+1;j<n;j++){
+        for(int j=i+1;j<len;j++){
             if(ch==str[j]) count++;
         }
         printf("%c: %d",ch,count);
