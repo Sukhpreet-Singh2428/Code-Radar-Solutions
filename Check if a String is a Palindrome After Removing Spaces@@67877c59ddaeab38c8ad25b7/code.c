@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<string.h>
+#include<ctype.h>
 void palindrome(char* str1, int len){
     for(int i=0,j=len-1;i<=j;i++,j--){
         char temp = str1[i];
@@ -14,7 +15,7 @@ int main(){
     int j = 0;
     for(int i=0;str[i]!=0;i++){
         if(str[i]!=' '){
-            str[j++] = str[i];
+            str[j++] = tolower(str[i]);  // case sensitive : ek test case hai treating upper and lower letter same.
         }
     }
     str[j] = '\0';
