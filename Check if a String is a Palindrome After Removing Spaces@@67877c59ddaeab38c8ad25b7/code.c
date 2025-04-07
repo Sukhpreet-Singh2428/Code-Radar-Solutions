@@ -12,14 +12,14 @@ int main(){
     char str[40];
     fgets(str, sizeof(str), stdin);
     str[strcspn(str,"\n")] = '\0';
-    int j = 0;
-    for(int i=0;str[i]!=0;i++){
+    int len = strlen(str);
+    for(int i=0;i<len;i++){
         if(str[i]!=' '){
             str[j++] = tolower(str[i]);  // case sensitive : ek test case hai treating upper and lower letter same.
         }
     }
     str[j] = '\0';
-    int len = j;
+    len = j;  // update kari hai length of string after removing spaces
     char str1[40];
     strcpy(str1,str);
     palindrome(str1,len);
