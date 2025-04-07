@@ -9,9 +9,11 @@ int main(){
     for(int i=0;i<len;i++){                 // 'A' to 'Z' = 65 to 90
         char ch = str[i];
         if(ch>='a' && ch<='z'){
-            ch = ch - 32;   // convert to uppercase
+            // ch = ch - 32;   // convert to uppercase
+            ch = toupper(ch);
         } else if(ch>='A' && ch<='Z'){
-            ch = ch + 32;   // convert to lowercase
+            // ch = ch + 32;   // convert to lowercase
+            ch = tolower(ch);
         } 
         str[i] = ch;
     }
