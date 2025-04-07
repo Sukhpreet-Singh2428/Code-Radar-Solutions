@@ -17,6 +17,7 @@ int main(){
             if(ch==str[j]) count++;
         }
         printf("%c: %d",ch,count);
+        printf("\n");
     }
     return 0;
 }
