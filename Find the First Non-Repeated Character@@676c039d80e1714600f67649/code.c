@@ -20,6 +20,7 @@ int main(){
     fgets(str, sizeof(str), stdin);
     str[strcspn(str,"\n")] = '\0';
     int len = strlen(str);
-    firstNonRepeated(str,len);
+    char result = firstNonRepeated(str,len);
+    puts(result);
     return 0;
 }
