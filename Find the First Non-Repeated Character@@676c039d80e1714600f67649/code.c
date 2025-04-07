@@ -21,6 +21,6 @@ int main(){
     str[strcspn(str,"\n")] = '\0';
     int len = strlen(str);
     char result = firstNonRepeated(str,len);
-    puts(result);
+    printf("%c",result);
     return 0;
 }
