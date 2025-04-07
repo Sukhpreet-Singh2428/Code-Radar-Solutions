@@ -8,11 +8,11 @@ int main(){
     char charac;
     for(int i=0;i<len;i++){
         char ch = str[i];
-        int flag = 0;
+        int count = 1;
         for(int j=i+1;j<len;j++){
-            if(ch==str[j]) flag = 1;
+            if(ch==str[j]) count++;
         }
-        if(flag==0){
+        if(count==1){
             charac = str[i];
             break;
         }
