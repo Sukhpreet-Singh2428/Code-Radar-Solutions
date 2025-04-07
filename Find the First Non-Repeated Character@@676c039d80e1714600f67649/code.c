@@ -2,11 +2,11 @@
 #include<string.h>
 int firstNonRepeated(char* str, int len){
     for(int i=0;i<len;i++){
-        int count = 1;
+        int flag = 1;
         for(int j=i+1;j<len;j++){
-            if(str[i]==str[j]) count++;
+            if(str[i]==str[j]) flag=0;
         }
-        if(count==1){
+        if(flag){
             return printf("%c",str[i]);
         }
     }
