@@ -3,7 +3,7 @@
 int main(){
     char str[40];
     fgets(str, sizeof(str), stdin);
-    if(str[0]=="\n"){
+    if(str[0]=='\n'){
         puts("Yes");
         return 0;
     }
