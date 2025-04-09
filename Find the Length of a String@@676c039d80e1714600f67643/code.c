@@ -5,8 +5,8 @@ int main(){
     scanf("%[^\n]s",str);
     int size = 0;
     for(int i=0;str[i]!='\0';i++){
-        count++;
+        size++;
     }
-    printf("%d",count);
+    printf("%d",size);
     return 0;
 }
