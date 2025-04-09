@@ -6,8 +6,7 @@ int main(){
     // fgets(str, sizeof(str), stdin);
     // str[strcspn(str,"\n")] = '\0';
     int size = 0;
-    while(str[size]!='\0'){
-        // if(str[size]=='\n') break;
+    for(int i=0;str[i]!='\0';i++){
         size++;
     }
     printf("%d",size);
