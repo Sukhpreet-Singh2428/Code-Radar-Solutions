@@ -6,7 +6,7 @@ int main(){
     fgets(str, sizeof(str), stdin);
     // str[strcspn(str,"\n")] = '\0';
     int size = 0;
-    while(str[size]!="\n"){
+    while(str[size]!='\n'){
         // if(str[size]=='\n') break;
         size++;
     }
